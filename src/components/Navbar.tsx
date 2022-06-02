@@ -8,12 +8,12 @@ const items = [
     content: "Home",
   },
   {
-    key: "reviews",
-    content: "Reviews",
+    key: "color-flipper",
+    content: "Color Flipper",
   },
   {
-    key: "settings",
-    content: "Settings",
+    key: "reviews",
+    content: "Reviews",
   },
 ];
 

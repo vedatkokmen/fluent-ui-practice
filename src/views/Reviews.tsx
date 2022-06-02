@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { faker } from "@faker-js/faker";
 import {
   ChevronEndIcon,
@@ -6,7 +6,15 @@ import {
 } from "@fluentui/react-icons-northstar";
 import { Box, Button, Header, Image, Text } from "@fluentui/react-northstar";
 
-const reviews = [
+type Review = {
+  id: number;
+  name: string;
+  job: string;
+  img: string;
+  text: string;
+};
+
+const reviews: Review[] = [
   {
     id: 1,
     name: "susan smith",
