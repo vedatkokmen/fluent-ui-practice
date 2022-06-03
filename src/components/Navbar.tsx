@@ -15,6 +15,10 @@ const items = [
     key: "reviews",
     content: "Reviews",
   },
+  {
+    key: "counter",
+    content: "Counter",
+  },
 ];
 
 function Navbar() {

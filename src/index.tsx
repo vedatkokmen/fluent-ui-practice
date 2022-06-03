@@ -9,6 +9,7 @@ import { Provider, teamsTheme } from "@fluentui/react-northstar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ColorFlipper from "./views/ColorFlipper";
+import Counter from "./views/Counter";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -22,6 +23,7 @@ const routing = (
       <Route path="/" element={<App />}></Route>
       <Route path="/color-flipper" element={<ColorFlipper />}></Route>
       <Route path="/reviews" element={<Reviews />}></Route>
+      <Route path="/counter" element={<Counter />}></Route>
     </Routes>
   </Router>
 );

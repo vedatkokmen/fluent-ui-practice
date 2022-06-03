@@ -47,23 +47,28 @@ function ColorFlipper() {
       >
         <Flex
           style={{
-            backgroundColor: "#333",
+            backgroundColor: "#000",
             padding: "1rem 2rem",
             marginBottom: "1rem",
             borderRadius: "1rem",
+            color: "#fff",
           }}
         >
-          <Flex>
-            <Header as="h2" content="Background Color : " color="white" />
-            <Header
-              as="h2"
-              content={hexColor}
-              color="white"
-              style={{
-                marginLeft: "1rem",
-              }}
-            />
-          </Flex>
+          <Header
+            as="h2"
+            content="Background Color : "
+            style={{
+              color: "#fff",
+            }}
+          />
+          <Header
+            as="h2"
+            content={hexColor}
+            style={{
+              marginLeft: "1rem",
+              color: "#fff",
+            }}
+          />
         </Flex>
         <Flex>
           <Button content="CLICK ME" onClick={createHex} />
