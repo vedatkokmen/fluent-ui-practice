@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu } from "@fluentui/react-northstar";
 import { Link } from "react-router-dom";
 
@@ -22,13 +22,19 @@ const items = [
 ];
 
 function Navbar() {
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <Menu
       aria-label="Navbar"
       className="navbar"
-      items={items.map((item) => ({
+      activeIndex={activeIndex}
+      items={items.map((item, index) => ({
         ...item,
         content: <Link to={item.key}>{item.content}</Link>,
+        onClick: () => {
+          setActiveIndex(index);
+          console.log(activeIndex);
+        },
       }))}
     ></Menu>
   );

@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ColorFlipper from "./views/ColorFlipper";
 import Counter from "./views/Counter";
+import Questions from "./views/Questions";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
